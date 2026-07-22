@@ -104,30 +104,6 @@ Enter keys anytime via **Open Dashboard** in the extension popup → Settings.
 
 ---
 
-## Project Structure
-
-```
-/detecting_phishing/
-├── gui.py                  # Desktop app entry point (PyQt6)
-├── requirements.txt
-├── setup.ps1               # Auto-setup script
-├── start.bat               # Launch the app
-├── .env.example            # Config template
-├── /extension/             # Chrome extension source
-├── /server/                # FastAPI backend
-│   ├── /routers/           # API endpoints
-│   ├── /tools/             # Detection tools (WHOIS, DNS, DOM, etc.)
-│   └── /cache/             # Cache client (diskcache)
-├── /whitelist/             # Trusted domain lists
-├── /data/                  # Runtime data (gitignored)
-│   ├── /cache/             # diskcache files
-│   ├── /logs/              # Browsing log
-│   └── /outputs/           # Deep scan results
-└── /docs/                  # Project documentation
-```
-
----
-
 ## Tech Stack
 
 | Layer | Technology |
