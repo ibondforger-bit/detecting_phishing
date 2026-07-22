@@ -136,17 +136,6 @@ Enter keys anytime via **Open Dashboard** in the extension popup → Settings.
 ---
 
 ## Roadmap
-
-### V1.0.0 (Current)
-- [x] Two-tier detection (fast + deep)
-- [x] Warning popup with Continue / Deep Scan / Go Back
-- [x] Full browsing log (local)
-- [x] Blocklist APIs with priority order
-- [x] URL pattern heuristics
-- [x] WHOIS, DNS, DOM, redirect chain, network traffic analysis
-- [x] Deep scan report panel
-- [x] Extension dashboard
-
 ### V2.0.0
 - [ ] PyQt6 desktop application
 - [ ] Local backend (no remote server)
