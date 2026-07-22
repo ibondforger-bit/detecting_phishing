@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebSense Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="grid">
+      <section class="panel">
+        <h1>Dashboard</h1>
+        <label>
+          Backend server
+          <input id="server-url" type="text" value="http://127.0.0.1:8000">
+        </label>
+        <div class="actions">
+          <button id="save-server" class="primary">Save</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>API Key Configuration</h2>
+        <form id="api-keys-form" class="grid">
+          <label>
+            Google Safe Browsing API Key:
+            <input type="password" id="google-safe-browsing-key" placeholder="Loading...">
+          </label>
+          <div class="actions">
+            <button type="submit" id="save-api-keys" class="primary">Save API Keys</button>
+          </div>
+        </form>
+        <div id="api-status-msg" style="margin-top: 10px; font-weight: 500;"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Deep Scan Results History</h2>
+        <div id="history" class="grid"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Exclusion List</h2>
+        <p>Domains here are not intercepted or logged locally.</p>
+        <input id="exclusion-input" type="text" placeholder="example.com">
+        <div class="actions">
+          <button id="add-exclusion">Add Domain</button>
+        </div>
+        <div id="exclusions" class="grid"></div>
+      </section>
+    </main>
+    <script src="dashboard.js"></script>
+  </body>
+</html>

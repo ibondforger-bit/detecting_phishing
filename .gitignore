@@ -1,0 +1,53 @@
+# ── Virtual Environment ────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Runtime Data (all gitignored, folder structure kept via .gitkeep) ──────
+/data/*
+!/data/.gitkeep
+!/data/cache/.gitkeep
+!/data/logs/.gitkeep
+!/data/outputs/.gitkeep
+
+# ── Environment File (never commit real keys or config) ────────────────────
+.env
+
+# ── Python Cache ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── diskcache Files ────────────────────────────────────────────────────────
+*.db
+*.db-shm
+*.db-wal
+
+# ── PyInstaller Build Output ───────────────────────────────────────────────
+/build/
+/dist/
+*.spec
+
+# ── VS Code ────────────────────────────────────────────────────────────────
+.vscode/
+
+# ── Windows System Files ───────────────────────────────────────────────────
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ── Logs ───────────────────────────────────────────────────────────────────
+*.log
+/data/logs/browsing_log.json
+
+# ── Deep Scan Outputs ──────────────────────────────────────────────────────
+/data/outputs/
+
+# ── App State ──────────────────────────────────────────────────────────────
+/data/settings.json
+
+# ── API Keys (handled by keyring / Windows Credential Manager) ─────────────
+# Never stored in files — this is a reminder
+# keyring stores in Windows Credential Manager, not here

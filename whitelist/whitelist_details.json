@@ -1,0 +1,20 @@
+{
+  "google.com": {
+    "registrar": "MarkMonitor Inc.",
+    "ssl_issuer": "Google Trust Services",
+    "registered_since": "1997-09-15",
+    "aliases": ["www.google.com", "accounts.google.com"]
+  },
+  "paypal.com": {
+    "registrar": "MarkMonitor Inc.",
+    "ssl_issuer": "DigiCert or PayPal-managed certificate authority",
+    "registered_since": "1999-07-15",
+    "aliases": ["www.paypal.com"]
+  },
+  "github.com": {
+    "registrar": "MarkMonitor Inc.",
+    "ssl_issuer": "DigiCert",
+    "registered_since": "2007-10-09",
+    "aliases": ["www.github.com"]
+  }
+}
